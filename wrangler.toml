@@ -1,0 +1,17 @@
+name = "roundtable"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+
+# Create your own KV namespace and paste its id below:
+#   wrangler kv namespace create ROUNDTABLE_KV
+# The command prints an id - paste it here instead of YOUR_KV_ID
+
+[[kv_namespaces]]
+binding = "ROUNDTABLE_KV"
+id = "YOUR_KV_ID"
+
+# Set your own API keys as secrets (never commit them):
+#   wrangler secret put ANTHROPIC_API_KEY
+#   wrangler secret put OPENAI_API_KEY
+#   wrangler secret put GEMINI_API_KEY
+#   wrangler secret put GROK_API_KEY
